@@ -19,8 +19,8 @@ while camera.isOpened():
 
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
 
-    H1 = cv2.getTrackbarPos("H1","frame")
-    H2 = cv2.getTrackbarPos("H2","frame")
+    H1 = int(cv2.getTrackbarPos("H1","frame") / 2)
+    H2 = int(cv2.getTrackbarPos("H2","frame") / 2)
     S1 = cv2.getTrackbarPos("S1","frame")
     S2 = cv2.getTrackbarPos("S2","frame")
     V1 = cv2.getTrackbarPos("V1","frame")
