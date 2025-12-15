@@ -7,10 +7,10 @@ def nothing(x):
     pass
 cv2.namedWindow("frame")
 cv2.createTrackbar("H1", "frame", 0, 179, nothing)
-cv2.createTrackbar("H2", "frame", 0, 179, nothing)
 cv2.createTrackbar("S1", "frame", 0, 255, nothing)
-cv2.createTrackbar("S2", "frame", 0, 255, nothing)
 cv2.createTrackbar("V1", "frame", 0, 255, nothing)
+cv2.createTrackbar("H2", "frame", 0, 179, nothing)
+cv2.createTrackbar("S2", "frame", 0, 255, nothing)
 cv2.createTrackbar("V2", "frame", 0, 255, nothing)
 
 
